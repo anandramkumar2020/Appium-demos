@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.experion</groupId>
+  <artifactId>appium-demos</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>appium-demos</name>
+	<description>Demo project for Appium 2.0</description>
+	<properties>
+		<java.version>11</java.version>
+		<appium.java.client>8.6.0</appium.java.client>
+		<org.testng>7.8.0</org.testng>
+		<extentreports>5.0.5</extentreports>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>${appium.java.client}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${org.testng}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+		    <groupId>com.aventstack</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>${extentreports}</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>009visualvalidation.testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<testFailureIgnore>true</testFailureIgnore>
+				</configuration>
+				
+			</plugin>
+			<plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-compiler-plugin</artifactId>
+		        <version>3.11.0</version>
+		        <configuration>
+		          <annotationProcessorPaths>
+		            <path>
+		              <groupId>org.projectlombok</groupId>
+		              <artifactId>lombok</artifactId>
+		              <version>1.18.22</version>
+		            </path>
+		          </annotationProcessorPaths>
+		        </configuration>
+		      </plugin>
+		</plugins>
+	</build>
+</project>

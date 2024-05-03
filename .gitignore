@@ -1,0 +1,29 @@
+# Maven specific files
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE files
+*.iml
+.idea/
+.vscode/
+
+# Compiled Java classes
+*.class
+
+# Logs
+*.log
+
+# Maven generated files
+mvnw
+mvnw.cmd
+.mvn/
+
+#sample apps
+apps/
+
+# TestNG reports
+test-output/
+
+# Operating system generated files
+.DS_Store
+Thumbs.db
