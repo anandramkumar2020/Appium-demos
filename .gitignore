@@ -21,6 +21,9 @@ mvnw.cmd
 #sample apps
 apps/
 
+#Extent Report
+testreports/
+
 # TestNG reports
 test-output/
 
