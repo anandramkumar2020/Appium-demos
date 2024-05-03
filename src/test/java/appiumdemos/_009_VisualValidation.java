@@ -145,7 +145,7 @@ public class _009_VisualValidation extends _103_ImageBaseTest {
     private ExtentTest test;
 
     // Threshold for similarity match
-    private static final double MATCH_THRESHOLD = 0.95;
+    private static final double MATCH_THRESHOLD = 0.97;
     // Directory path for storing images
     private static final String IMAGE_DIR = System.getProperty("user.dir") + "\\Images";
     
