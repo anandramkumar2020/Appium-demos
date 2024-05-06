@@ -54,7 +54,8 @@ public class _103_ImageBaseTest {
 
 		// Initialize the Android driver with the specified options and Appium server
 		// URL
-		driver = new AndroidDriver(new URL("http://192.168.1.10:4723"), options);
+		//driver = new AndroidDriver(new URL("http://192.168.1.10:4723"), options);
+		driver = new AndroidDriver(new URL("http://172.20.10.7:4723"), options);
 	}
 
 	/**
